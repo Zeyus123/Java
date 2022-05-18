@@ -1,5 +1,4 @@
-class A extends Thread
-{
+class A extends Thread{
 	public void fun()
 	{
 		for(int i=1;i<=10;i++)
@@ -7,7 +6,7 @@ class A extends Thread
 			System.out.println("tapash");
 			try {
 				Thread.sleep(1000);
-			} catch (InterruptedException e) {
+			} catch(Exception e) {
 				e.printStackTrace();
 			}
 		}
@@ -28,7 +27,7 @@ public class ExtendingThread {
 			System.out.println("Akash");
 			try {
 				Thread thread = new Thread();
-				thread.join(1000);
+				thread.sleep(1000);
 			} catch (InterruptedException e) {
 				
 				e.printStackTrace();
